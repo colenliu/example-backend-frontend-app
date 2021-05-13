@@ -11,7 +11,7 @@ class App extends Component {
 
   callAPI = async () => {
     const response = await axios.get("http://localhost:3000/testAPI");
-    console.log(response.data);
+    // console.log(response.data);
 
     this.setState({ apiResponse: response.data });
   };
@@ -21,7 +21,7 @@ class App extends Component {
       email: "iluvpie@email.com",
       firstName: "Hi",
     });
-    console.log(response);
+    // console.log(response);
 
     if (response.status === 200)
       this.setState({ authenticated: "authenticated" });
